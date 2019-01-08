@@ -3,13 +3,13 @@
 dircolors_checked=false
 DIRCOLORS_DIR="$(echo ~/.dir_colors)"
 DIRCOLORS_SOLARIZED="$(pwd)"
-DIRCOLORS_REPO_ADRESS="https://github.com/seebi/dircolors-solarized"
-DIRCOLORS_DL_ADRESS="https://raw.github.com/seebi/dircolors-solarized/master/"
+DIRCOLORS_REPO_ADRESS="https://github.com/yyldavidj/dircolors-solarized"
+DIRCOLORS_DL_ADRESS="https://raw.github.com/yyldavidj/dircolors-solarized/master/"
 
 dl_dircolors() {
   echo
   eval "wget -O "$DIRCOLORS_SOLARIZED/dircolors" \
-      "$DIRCOLORS_DL_ADRESS/dircolors.ansi-$scheme""
+      "$DIRCOLORS_DL_ADRESS/dircolors.256dark""
   valid=$?
   if [ ! "$valid" == "0" -o ! -e "$DIRCOLORS_SOLARIZED/dircolors" ]
     then echo -e "Download failed, dircolors will not be copied but you "
